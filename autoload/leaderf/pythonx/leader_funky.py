@@ -18,9 +18,14 @@ MODE_NAMEONLY = 1
 MODE_DESC = 2
 
 default_ft_filters = {
+    'vim': [
+        {
+            'pattern': r'^[\t ]*fu(n|nc|nct|ncti|nctio|nction)?!?[\t ]+\S+'
+        }
+    ],
     'python': [
         {
-            'pattern': r'^\s*(def|class)\s+([a-zA-Z0-9_]+)\s*[:\(]'
+            'pattern': r'^\s*(def|class)\s+[a-zA-Z_]\w*\s*[:\(]'
         }
     ]
 }
